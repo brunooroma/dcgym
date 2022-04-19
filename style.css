@@ -41,7 +41,6 @@
     position: fixed;
     width: 100%;
     border-bottom: 0.2rem solid whitesmoke;
-
 }
 
 .navegacion__lista {
@@ -309,11 +308,26 @@
     .contacto__form {
         width: 70%;
     }
+
+    .pie iframe {
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     * {
         font-size: 24px;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cabecera {
+        padding-top: 0;
     }
 
     .nosotros img {
