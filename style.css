@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Akshar', sans-serif;
+    font-size: 16px;
+}
+
+.cuerpo {
+    grid-template-areas: 
+        "navegacion navegacion navegacion"
+        "cabecera cabecera cabecera"
+        "principal principal principal"
+        "principal principal principal"
+        "principal principal principal"
+        "pie pie pie";
+}
+
+.navegacion {
+    grid-area: navegacion;
+}
+
+.cabecera {
+    grid-area: cabecera;
+}
+
+.principal {
+    grid-area: principal;
+    min-height: 100vh;
+}
+
+.pie {
+    grid-area: pie;
+}
+
+/*<-------- NAVEGACION --------->*/
+
+.navegacion {
+    background-color: rgb(2, 2, 146);
+    position: fixed;
+    width: 100%;
+    border-bottom: 0.2rem solid whitesmoke;
+
+}
+
+.navegacion__lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navegacion__lista a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0.2rem;
+}
+
+/*<-------- CABECERA --------->*/
+
+.cabecera {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.cabecera img {
+    padding-top: 1rem;
+    width: 50%;
+}
+
+.cabecera h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: rgb(2, 2, 146);
+}
+
+/*<-------- INICIO --------->*/
+
+.inicio {
+    grid-template-areas: 
+        "inicio__section1"
+        "inicio__section2"
+        "costado";
+    background-color:rgb(2, 2, 146);
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.inicio__section1 {
+    grid-area: inicio__section1;
+    margin: 1rem;
+}
+
+.inicio__section2 {
+    grid-area: inicio__section2;
+    margin: 1rem;
+}
+
+.inicio p {
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 0.5rem;
+}
+
+.costado {
+    grid-area: costado;
+    margin: 1rem;
+}
+
+/*<-------- NOSOTROS --------->*/
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(2, 2, 146);
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.nosotros p {
+    text-align: justify;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.nosotros__section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.nosotros img {
+    width: 100%;
+}
+
+.nosotros h3 {
+    margin-top: 1rem;
+}
+
+/*<-------- NOSOTROS --------->*/
+
+.productos {
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(2, 2, 146);
+        color: whitesmoke;
+        padding: 1rem;
+}
+
+.productos__card {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    color: rgb(2, 2, 146);
+    padding: 0.5rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos__card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    width: 28%;
+    border-bottom: 0.2rem solid rgb(2, 2, 146);
+}
+
+.productos__card p {
+    text-align: justify;
+}
+
+/*<-------- GALERIA --------->*/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(2, 2, 146);
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+.galeria__section {
+    flex-direction: column;
+}
+
+.galeria__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid whitesmoke;
+}
+
+.div9 {
+    display: none;
+}
+
+.galeria__section img {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+/*<-------- CONTACTO --------->*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(2, 2, 146);
+    color: whitesmoke;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 5%;
+}
+
+.contacto__form h2 {
+    margin: 1rem;
+    font-size: 20px;
+    color: rgb(2, 2, 146);
+    padding-top: 1rem;
+}
+
+.contacto__form label {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(2, 2, 146);
+}
+
+.contacto__form button {
+    margin: 0.5rem;
+    width: 50%;
+}
+
+.boton__enviar {
+    background-color: rgb(2, 2, 146);
+    color: whitesmoke;
+}
+
+/*<-------- PIE --------->*/
+
+.pie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+}
+
+.pie__div {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.pie__lista {
+    margin: 0;
+}
+
+.pie__lista a {
+    text-decoration: none;
+    color: rgb(2, 2, 146);
+    margin: 0.2rem;
+}
+
+.direccion {
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    border: 0.1rem solid rgb(2, 2, 146);
+    background-color: rgb(2, 2, 146);
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 20px;
+    }
+
+    .productos__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos__card {
+        width: 50%;
+    }
+
+    .galeria__section img {
+        width: 50%;
+    }
+
+    .contacto__section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__form {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    * {
+        font-size: 24px;
+    }
+
+    .nosotros img {
+        width: 90%;
+        border-bottom: 0.2rem solid whitesmoke;
+        padding-bottom: 1rem;
+    }
+
+    .productos__section {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-left: 5rem;
+    }
+
+    .productos__card {
+        width: 80%;
+    }
+
+    .productos__card h3 {
+        width: 35%;
+    }
+
+    .galeria__section {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+
+    .galeria__section img {
+        width: 100%;
+    }
+
+    .div9 {
+        display: block;
+    }
+
+    .contacto__section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__form {
+        width: 50%;
+    }
+}
