@@ -136,6 +136,25 @@
 
 .nosotros img {
     width: 100%;
+    animation-name: opacidad;
+    animation-timing-function: 1;
+    animation-duration: 3s;
+    animation-fill-mode: linear;
+}
+
+@keyframes opacidad{
+    0% {
+        opacity: 0;
+        width: 20%;
+    }
+    50% {
+        opacity:0.5;
+        width: 50%;
+    }
+    100%{
+        opacity:1;
+        width: 100%;
+    }
 }
 
 .nosotros h3 {
