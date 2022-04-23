@@ -18,13 +18,41 @@ main section p {
     line-height: 2rem;
 }
 
-.planes__section {
+.staff {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff__section {
+    margin: 2rem;
+}
+
+.staff__section__h3 {
+    text-align: center;
+}
+
+.planes {
+    margin-top: 8rem;
+    background-image: url(./imagenes/bgheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.planes__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 10rem;
+    gap: 5rem;
+}
+
+.card {
+    background-color: black;
 }
 
 .card-body {
-    background-color: rgba(129, 2, 202, 0.863);
+    background-color: rgba(170, 32, 250, 0.863);
     color: white;
 }
 
@@ -37,8 +65,12 @@ main section p {
     color: black;
 }
 
+.galeria {
+    width: 80%;
+}
+
 .carousel-inner img {
-    height: 50rem;
+    height: 80vh;
 }
 
 .carousel {
@@ -57,5 +89,27 @@ main section p {
 @media only screen and (max-width: 768px) {
     .navbar__nombre h4 {
         display: none;
+    }
+
+    .planes__section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 10rem;
+        gap: 2rem;
+    }
+
+    .galeria {
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel {
+        width: 100vw;
+    }
+
+    .carousel-inner img {
+        margin-top: 10rem;
+        height: 50vh;
     }
 }
