@@ -13,11 +13,11 @@
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <div class="navbar__nombre ms-5">
+                <div class="navbar__nombre">
                     <h3>DC GYM</h3>
                     <h4>Centro de Entrenamiento</h4>
                 </div>
-                    <a class="navbar-brand fs-3 ms-5" href="../index.html"><img class="navbar__logo" src="../imagenes/logo_sin_fondo.png" alt="Logo DC GYM"></a>
+                    <a class="navbar-brand fs-3" href="../index.html"><img class="navbar__logo" src="../imagenes/logo_sin_fondo.png" alt="Logo DC GYM"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,8 +34,45 @@
             </div>
           </nav>
     </header>
-    <main>
-        
+    <main class="contacto">
+        <form class="contacto__form">
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" placeholder="Juan Pablo" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Apellido</label>
+                <input type="text" placeholder="Garcia" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo Electronico</label>
+              <input type="email" placeholder="ejemplo@ejemplo.com.ar" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Telefono</label>
+              <input type="tel" placeholder="1123456789" class="form-control">
+            </div>
+            <div class="mb-3">
+            <select class="form-select">
+                <option selected>Elegi un entrenamiento</option>
+                <option value="1">Musculacion</option>
+                <option value="2">Funcional</option>
+                <option value="3">Crossfit</option>
+                <option value="4">Deportivo</option>
+              </select>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="radio" name="creditos" value="8" class="form-check-input" >
+              <label class="form-check-label" >8 Creditos</label> <br>
+              <input type="radio" name="creditos" value="12" class="form-check-input" >
+              <label class="form-check-label" >12 Creditos</label> <br>
+              <input type="radio" name="creditos" value="16" class="form-check-input" >
+              <label class="form-check-label" >16 Creditos</label> <br>
+              <input type="radio" name="creditos" value="20" class="form-check-input" >
+              <label class="form-check-label" >20 Creditos</label> <br>
+            </div>
+            <button type="submit" class="btn btn-primary btn-inscripcion">Inscribirse</button>
+          </form>
     </main>
     <footer class="bg-dark text-center text-white footer">
         <!-- Grid container -->
@@ -43,24 +80,16 @@
           <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
       
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
       
             <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-youtube"></i
-            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com" target="_blank" role="button"><i class="fab fa-youtube"></i></a>
       
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-              ><i class="fab fa-instagram"></i
-            ></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
       
           </section>
           <!-- Section: Social media -->
@@ -85,19 +114,19 @@
       
                 <ul class="list-unstyled mb-0 flex-column">
                   <li>
-                    <a href="#!" class="text-white">Inicio</a>
+                    <a href="../index.html" class="text-white">Inicio</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-white">Staff</a>
+                    <a href="./staff.html" class="text-white">Staff</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-white">Planes</a>
+                    <a href="./planes.html" class="text-white">Planes</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-white">Galeria</a>
+                    <a href="./galeria.html" class="text-white">Galeria</a>
                   </li>
                   <li>
-                    <a href="#!" class="text-white">Contacto</a>
+                    <a href="#" class="text-white">Contacto</a>
                   </li>
                 </ul>
               </div>

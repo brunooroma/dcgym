@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap');
 
+* {
+    font-family: 'Akshar', sans-serif;
+}
+
 .navbar__logo {
     width: 6rem;
+    margin-left: 8rem;
 }
 
 .navbar__nombre {
@@ -9,8 +14,11 @@
 }
 
 main {
-    margin-top: 10rem;
+    margin-top: 8rem;
     min-height: 100vh;
+    background-image: url(./imagenes/bgheader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main section p {
@@ -25,22 +33,28 @@ main section p {
 }
 
 .staff__section {
-    margin: 2rem;
+    display: flex;
+    width: 50vw;
+    background-color: #A74FD3;
+    outline: 0.1rem solid white;
 }
 
-.staff__section__h3 {
-    text-align: center;
+.staff__section__div img {
+    margin: 1rem;
+}
+
+.staff__section__div p {
+    margin: 1rem 2rem;
+    color: white;
 }
 
 .planes {
     margin-top: 8rem;
-    background-image: url(./imagenes/bgheader.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .planes__section {
     display: grid;
+    width: 50vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 10rem;
@@ -52,13 +66,14 @@ main section p {
 }
 
 .card-body {
-    background-color: rgba(170, 32, 250, 0.863);
+    background-color: #A74FD3;
     color: white;
 }
 
 .card-header,
 .card-footer {
     background-color: rgb(206, 206, 206);
+    font-size: 2rem;
 }
 
 .modal {
@@ -66,15 +81,66 @@ main section p {
 }
 
 .galeria {
-    width: 80%;
-}
-
-.carousel-inner img {
-    height: 80vh;
+    width: 100%;
+    margin-top: 5rem;
+    min-height: 108vh;
 }
 
 .carousel {
-    width: 80vw;
+    width: 98vw;
+    padding-top: 5rem;
+}
+
+.carousel-inner {
+    outline: 0.2rem solid white;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__form {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.contacto__form label {
+    font-size: 1.1;
+    border-bottom: 0.1rem solid #A74FD3;
+}
+
+.contacto__form div {
+    width: 50%;
+}
+
+.form-check {
+    padding-left: 7.5rem;
+}
+
+.form-check label {
+    border: none;
+}
+
+.btn-inscripcion {
+    background-color: #A74FD3;
+    outline: #A74FD3;
+    border: #A74FD3;
+    width: 50%;
+}
+
+.btn-inscripcion:hover {
+    background-color: #A74FD3;
+    outline: #A74FD3;
+    border: #A74FD3;
+    color: black
 }
 
 .footer a {
@@ -86,30 +152,147 @@ main section p {
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 1440px) {
+    .staff__section {
+        width: 80vw;
+    }
+
+    .planes__section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        width: 60vw;
+    }
+
+    .form-check {
+        padding-left: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .galeria {
+        margin-top: 5rem;
+        min-height: 120vh;
+    }
+
+    .staff__section {
+        width: 85vw;
+    }
+
+    .planes__section {
+        width: 80vw;
+    }
+
+    .contacto__form {
+        width: 60vw;
+    }
+
+    .form-check {
+        padding-left: 8rem;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .navbar__nombre h4 {
         display: none;
+    }
+
+    .navbar__logo {
+        margin-left: 2rem;
+    }
+
+    main {
+        margin-top: 2rem;
+    }
+
+    .staff {
+        margin-top: 8rem;
+    }
+    
+    .staff__section {
+        width: 85vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .staff__section__div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .staff__section__div img {
+        width: 50%;
+    }
+
+    .planes {
+        margin-top: 2rem;
     }
 
     .planes__section {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        margin-top: 10rem;
+        margin-top: 6rem;
         gap: 2rem;
     }
 
     .galeria {
         width: 100%;
         padding: 0;
+        min-height: 60vh;
     }
 
     .carousel {
-        width: 100vw;
+        width: 95vw;
+        margin-left: 1rem;
     }
 
     .carousel-inner img {
-        margin-top: 10rem;
-        height: 50vh;
+        height: 40vh;
+        width: 90vw;
+    }
+
+    .contacto__form {
+        margin-top: 8rem;
+        width: 80vw;
+    }
+
+    .form-check {
+        padding-left: 8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contacto__form {
+        margin-top: 8rem;
+        width: 80vw;
+    }
+    
+    .contacto__form div {
+        width: 80%;
+    }
+
+    .form-check {
+        padding-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .carousel {
+        width: 90vw;
+        margin-left: 1rem;
+    }
+
+    .staff {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .planes__section {
+        width: 95vw;
+    }
+
+    .form-check {
+        padding-left: 5rem;
     }
 }
