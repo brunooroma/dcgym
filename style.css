@@ -13,6 +13,10 @@
     color: white;
 }
 
+.active {
+    color: #A74FD3 !important;
+}
+
 main {
     margin-top: 8rem;
     min-height: 100vh;
@@ -24,6 +28,25 @@ main {
 main section p {
     text-align: justify;
     line-height: 2rem;
+}
+
+.inicio {
+    color: white;
+    padding: 3rem;
+}
+
+.inicio__section {
+    display: flex;
+    justify-content: center;
+}
+
+.inicio__section:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio__section img {
+    outline: 0.2rem solid white;
 }
 
 .staff {
@@ -66,18 +89,30 @@ main section p {
 }
 
 .card-body {
-    background-color: #A74FD3;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .card-header,
 .card-footer {
-    background-color: rgb(206, 206, 206);
+    background-color: #A74FD3;
     font-size: 2rem;
 }
 
 .modal {
     color: black;
+}
+
+.planes-btn {
+    background-color: #A74FD3;
+    outline: #A74FD3;
+    border: #A74FD3;
+}
+
+.planes-btn:hover {
+    background-color: #A74FD3;
+    outline: #A74FD3;
+    border: #A74FD3;
 }
 
 .galeria {
@@ -205,6 +240,11 @@ main section p {
         margin-top: 2rem;
     }
 
+    .inicio {
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+
     .staff {
         margin-top: 8rem;
     }
@@ -263,6 +303,15 @@ main section p {
 }
 
 @media only screen and (max-width: 480px) {
+    
+    .inicio__section p {
+        text-align: justify;
+    }
+
+    .inicio__section img {
+        width: 80vw;
+    }
+    
     .contacto__form {
         margin-top: 8rem;
         width: 80vw;
