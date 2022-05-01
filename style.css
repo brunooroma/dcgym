@@ -115,6 +115,12 @@ main section p {
     border: #A74FD3;
 }
 
+.planes-btn:focus {
+    background-color: #A74FD3;
+    outline: #A74FD3;
+    border: #A74FD3;
+}
+
 .galeria {
     width: 100%;
     margin-top: 5rem;
