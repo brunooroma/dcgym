@@ -1,8 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap");
+* {
+  font-family: 'Akshar', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.navbar__logo {
+  width: 6rem;
+  margin-left: 8rem; }
+
+.navbar__nombre {
+  color: #f7f7f7; }
+
+.active {
+  color: #8f13ce !important; }
+
+main {
+  margin-top: 8rem;
+  min-height: 100vh;
+  background-image: url(../../imagenes/bgheader.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  main section p {
+    text-align: justify;
+    line-height: 2rem; }
+
+.staff {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .staff__section {
+    display: flex;
+    width: 50vw;
+    background-color: #8f13ce;
+    outline: 0.1rem solid #f7f7f7; }
+    .staff__section__div img {
+      margin: 1rem; }
+    .staff__section__div p {
+      margin: 1rem 2rem;
+      color: #f7f7f7; }
+
 .contacto__form {
   background-color: green; }
 
-nav {
-  color: blue; }
+.footer a {
+  text-decoration: none; }
 
-header ul {
-  background-color: yellow; }
+.footer img {
+  width: 7rem;
+  border-radius: 50%; }

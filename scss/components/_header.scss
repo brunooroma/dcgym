@@ -1,7 +1,14 @@
-nav {
-    color: blue;
+.navbar__logo {
+    width: 6rem;
+    margin-left: 8rem;
 }
 
-header ul {
-    background-color: yellow;
+.navbar {
+    &__nombre{
+    color: $color-texto;
+    }
+}
+
+.active {
+    color: $color-principal !important;
 }
