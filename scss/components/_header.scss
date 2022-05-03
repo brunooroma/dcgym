@@ -1,12 +1,12 @@
-.navbar__logo {
+.navbar {
+    &__logo {
     width: 6rem;
     margin-left: 8rem;
-}
+    } 
 
-.navbar {
     &__nombre{
-    color: $color-texto;
-    }
+        color: $color-texto;
+    }  
 }
 
 .active {

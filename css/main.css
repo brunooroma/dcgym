@@ -4,16 +4,6 @@
   margin: 0;
   padding: 0; }
 
-.navbar__logo {
-  width: 6rem;
-  margin-left: 8rem; }
-
-.navbar__nombre {
-  color: #f7f7f7; }
-
-.active {
-  color: #8f13ce !important; }
-
 main {
   margin-top: 8rem;
   min-height: 100vh;
@@ -23,6 +13,16 @@ main {
   main section p {
     text-align: justify;
     line-height: 2rem; }
+
+.navbar__logo {
+  width: 6rem;
+  margin-left: 8rem; }
+
+.navbar__nombre {
+  color: #f7f7f7; }
+
+.active {
+  color: #8f13ce !important; }
 
 .staff {
   display: flex;

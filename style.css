@@ -109,13 +109,8 @@ main section p {
     border: #A74FD3;
 }
 
+.planes-btn:focus,
 .planes-btn:hover {
-    background-color: #A74FD3;
-    outline: #A74FD3;
-    border: #A74FD3;
-}
-
-.planes-btn:focus {
     background-color: #A74FD3;
     outline: #A74FD3;
     border: #A74FD3;
