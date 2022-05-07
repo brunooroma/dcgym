@@ -1,2 +1,43 @@
+//////// VARIABLES //////////
+
 $color-principal: #8f13ce;
+$color-secundario: #fff;
 $color-texto: #f7f7f7;
+$color-borde: #f7f7f7;
+$color-oscuro: #000;
+
+//////// MAPAS //////////
+
+$color-pagina:(
+    color-principal: $color-principal,
+    color-secundario: $color-secundario,
+    color-texto: $color-texto,
+    color-borde: $color-borde,
+    color-oscuro: $color-oscuro,
+);
+
+//////// EXTENDS //////////
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+%bordes{
+    outline: 0.2rem solid $color-borde;
+}
+
+%botones{
+    background-color: $color-principal;
+    outline: $color-principal;
+    border: $color-principal;
+    color: $color-secundario;
+}
+
+//////// MIXINS //////////
+
+@mixin background($bg-rp,$bg-cover) {
+    background-repeat: $bg-rp;
+    background-size: $bg-cover;
+}

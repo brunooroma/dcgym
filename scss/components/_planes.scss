@@ -1,0 +1,44 @@
+.planes {
+    margin-top: 8rem;
+
+    &__section {
+        display: grid;
+        width: 50vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 10rem;
+        gap: 5rem;
+    }
+}
+
+.card {
+    background-color: $color-oscuro;
+
+    &-body {
+        background-color: $color-secundario;
+        color: $color-oscuro;
+    }
+
+    &-header {
+        background-color: $color-principal;
+        color: $color-texto;
+        font-family: 'Koulen', cursive;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+    }
+   
+}
+
+.modal {
+    color: $color-oscuro;
+}
+
+.planes-btn {
+    @extend %botones;
+
+    &:focus,
+    &:hover {
+        @extend %botones;
+    }
+}

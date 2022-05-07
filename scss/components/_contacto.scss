@@ -1,3 +1,45 @@
-.contacto__form {
-    background-color: green;
+.contacto {
+    display: flex;
+    justify-content: center;
+
+    &__form {
+        @extend %flex-center;
+        flex-direction: column;
+        margin-top: 4rem;
+        width: 30vw;
+        height: 70vh;
+        background-color: white;
+        border-radius: 5%;
+    }
+
+    label {
+        font-size: 1.1;
+        border-bottom: 0.1rem solid $color-principal;
+    }
+
+    div {
+        width: 50%;
+    }
+}
+
+.form-check {
+    padding-left: 7.5rem;
+
+    label {
+        border: none;
+    }
+}
+
+.btn-inscripcion {
+    background-color: $color-principal;
+    outline: $color-principal;
+    border: $color-principal;
+    width: 50%;
+
+    &:hover {
+        background-color: $color-principal;
+        outline: $color-principal;
+        border: $color-principal;
+        color: $color-oscuro;
+    }
 }

@@ -1,4 +1,8 @@
+/////// VARIABLES /////////
+
 @import './base/variables';
+
+/////// PARTIALS /////////
 
 @import './components/general';
 @import './components/header';
@@ -9,3 +13,10 @@
 @import './components/contacto';
 @import './components/footer';
 
+/////// MEDIA QUERIES ///////
+
+@import './mediaQueries/media1440';
+@import './mediaQueries/media1024';
+@import './mediaQueries/media768';
+@import './mediaQueries/media480';
+@import './mediaQueries/media320';

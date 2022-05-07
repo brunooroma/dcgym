@@ -1,6 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat&display=swap");
+.inicio__section, .staff, .contacto__form {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.inicio__section img, .staff__section, .carousel-inner {
+  outline: 0.2rem solid #f7f7f7; }
+
+.planes-btn, .planes-btn:focus, .planes-btn:hover {
+  background-color: #8f13ce;
+  outline: #8f13ce;
+  border: #8f13ce;
+  color: #fff; }
+
 * {
-  font-family: 'Akshar', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -20,27 +34,100 @@ main {
 
 .navbar__nombre {
   color: #f7f7f7; }
+  .navbar__nombre h3, .navbar__nombre h4 {
+    font-family: 'Koulen', cursive;
+    letter-spacing: 0.2rem; }
+
+.nav-link {
+  font-family: 'Koulen', cursive;
+  letter-spacing: 0.1rem; }
 
 .active {
   color: #8f13ce !important; }
 
-.staff {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .staff__section {
+.inicio {
+  color: #f7f7f7;
+  padding: 3rem; }
+  .inicio__section:first-child {
     display: flex;
-    width: 50vw;
-    background-color: #8f13ce;
-    outline: 0.1rem solid #f7f7f7; }
-    .staff__section__div img {
-      margin: 1rem; }
-    .staff__section__div p {
-      margin: 1rem 2rem;
-      color: #f7f7f7; }
+    flex-direction: column; }
 
-.contacto__form {
-  background-color: green; }
+.staff__section {
+  display: flex;
+  width: 50vw;
+  background-color: #8f13ce; }
+  .staff__section__div img {
+    margin: 1rem; }
+  .staff__section__div p {
+    margin: 1rem 2rem;
+    color: #f7f7f7; }
+
+.planes {
+  margin-top: 8rem; }
+  .planes__section {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 10rem;
+    gap: 5rem; }
+
+.card {
+  background-color: #000; }
+  .card-body {
+    background-color: #fff;
+    color: #000; }
+  .card-header {
+    background-color: #8f13ce;
+    color: #f7f7f7;
+    font-family: 'Koulen', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 2rem; }
+
+.modal {
+  color: #000; }
+
+.galeria {
+  width: 100%;
+  margin-top: 5rem;
+  min-height: 108vh; }
+
+.carousel {
+  width: 98vw;
+  padding-top: 5rem; }
+
+.contacto {
+  display: flex;
+  justify-content: center; }
+  .contacto__form {
+    flex-direction: column;
+    margin-top: 4rem;
+    width: 30vw;
+    height: 70vh;
+    background-color: white;
+    border-radius: 5%; }
+  .contacto label {
+    font-size: 1.1;
+    border-bottom: 0.1rem solid #8f13ce; }
+  .contacto div {
+    width: 50%; }
+
+.form-check {
+  padding-left: 7.5rem; }
+  .form-check label {
+    border: none; }
+
+.btn-inscripcion {
+  background-color: #8f13ce;
+  outline: #8f13ce;
+  border: #8f13ce;
+  width: 50%; }
+  .btn-inscripcion:hover {
+    background-color: #8f13ce;
+    outline: #8f13ce;
+    border: #8f13ce;
+    color: #000; }
 
 .footer a {
   text-decoration: none; }
@@ -48,3 +135,96 @@ main {
 .footer img {
   width: 7rem;
   border-radius: 50%; }
+
+@media only screen and (max-width: 1440px) {
+  .staff__section {
+    width: 80vw; }
+  .planes__section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    width: 60vw; }
+  .form-check {
+    padding-left: 5rem; } }
+
+@media only screen and (max-width: 1024px) {
+  .galeria {
+    margin-top: 5rem;
+    min-height: 120vh; }
+  .staff__section {
+    width: 85vw; }
+  .planes__section {
+    width: 80vw; }
+  .contacto__form {
+    width: 60vw; }
+  .form-check {
+    padding-left: 8rem; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar__nombre h4 {
+    display: none; }
+  .navbar__logo {
+    margin-left: 2rem; }
+  main {
+    margin-top: 2rem; }
+  .inicio {
+    margin-top: 5rem;
+    padding-top: 5rem; }
+  .staff {
+    margin-top: 8rem; }
+    .staff__section {
+      width: 85vw;
+      flex-direction: column;
+      align-items: center; }
+      .staff__section__div {
+        display: flex;
+        justify-content: center; }
+        .staff__section__div img {
+          width: 50%; }
+  .planes {
+    margin-top: 2rem; }
+    .planes__section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-top: 6rem;
+      gap: 2rem; }
+  .galeria {
+    width: 100%;
+    padding: 0;
+    min-height: 60vh; }
+  .carousel {
+    width: 95vw;
+    margin-left: 1rem; }
+  .carousel-inner img {
+    height: 40vh;
+    width: 90vw; }
+  .contacto__form {
+    margin-top: 8rem;
+    width: 80vw; }
+  .form-check {
+    padding-left: 8rem; } }
+
+@media only screen and (max-width: 480px) {
+  .inicio__section p {
+    text-align: justify; }
+  .inicio__section img {
+    width: 80vw; }
+  .contacto__form {
+    margin-top: 8rem;
+    width: 80vw; }
+    .contacto__form div {
+      width: 80%; }
+  .form-check {
+    padding-left: 7rem; } }
+
+@media only screen and (max-width: 320px) {
+  .carousel {
+    width: 90vw;
+    margin-left: 1rem; }
+  .staff {
+    padding-top: 4rem;
+    padding-bottom: 2rem; }
+  .planes__section {
+    width: 95vw; }
+  .form-check {
+    padding-left: 5rem; } }

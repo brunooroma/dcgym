@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat&display=swap');
 
 * {
-    font-family: 'Akshar', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,8 +10,8 @@ main {
     margin-top: 8rem;
     min-height: 100vh;
     background-image: url(../../imagenes/bgheader.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    @include background(no-repeat,cover);
 
     section p {
         text-align: justify;

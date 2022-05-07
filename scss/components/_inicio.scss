@@ -1,0 +1,17 @@
+.inicio {
+    color: $color-texto;
+    padding: 3rem;
+
+    &__section {
+        @extend %flex-center;
+
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+           @extend %bordes;
+        }
+    }
+}

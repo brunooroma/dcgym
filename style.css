@@ -30,7 +30,7 @@ main section p {
     line-height: 2rem;
 }
 
-.inicio {
+/* .inicio {
     color: white;
     padding: 3rem;
 }
@@ -47,9 +47,9 @@ main section p {
 
 .inicio__section img {
     outline: 0.2rem solid white;
-}
+} */
 
-.staff {
+/* .staff {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,37 +69,37 @@ main section p {
 .staff__section__div p {
     margin: 1rem 2rem;
     color: white;
-}
+} */
 
-.planes {
+/* .planes {
     margin-top: 8rem;
-}
+} */
 
-.planes__section {
+/* .planes__section {
     display: grid;
     width: 50vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 10rem;
     gap: 5rem;
-}
+} */
 
-.card {
+/* .card {
     background-color: black;
-}
+} */
 
-.card-body {
+/* .card-body {
     background-color: white;
     color: black;
-}
+} */
 
-.card-header,
+/* .card-header,
 .card-footer {
     background-color: #A74FD3;
     font-size: 2rem;
-}
+} */
 
-.modal {
+/* .modal {
     color: black;
 }
 
@@ -107,6 +107,7 @@ main section p {
     background-color: #A74FD3;
     outline: #A74FD3;
     border: #A74FD3;
+    color: white;
 }
 
 .planes-btn:focus,
@@ -114,9 +115,10 @@ main section p {
     background-color: #A74FD3;
     outline: #A74FD3;
     border: #A74FD3;
-}
+    color: white;
+} */
 
-.galeria {
+/* .galeria {
     width: 100%;
     margin-top: 5rem;
     min-height: 108vh;
@@ -129,9 +131,9 @@ main section p {
 
 .carousel-inner {
     outline: 0.2rem solid white;
-}
+} */
 
-.contacto {
+/* .contacto {
     display: flex;
     justify-content: center;
 }
@@ -177,18 +179,18 @@ main section p {
     outline: #A74FD3;
     border: #A74FD3;
     color: black
-}
+} */
 
-.footer a {
+/* .footer a {
     text-decoration: none;
 }
 
 .footer img {
     width: 7rem;
     border-radius: 50%;
-}
+} */
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) {
     .staff__section {
         width: 80vw;
     }
@@ -202,10 +204,10 @@ main section p {
     .form-check {
         padding-left: 5rem;
     }
-}
+} */
 
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     .galeria {
         margin-top: 5rem;
         min-height: 120vh;
@@ -345,4 +347,4 @@ main section p {
     .form-check {
         padding-left: 5rem;
     }
-}
+} */

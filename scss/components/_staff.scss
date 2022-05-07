@@ -1,14 +1,12 @@
 .staff {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 
     &__section {
     display: flex;
     width: 50vw;
     background-color: $color-principal;
-    outline: 0.1rem solid $color-texto;
+    @extend %bordes;
 
     &__div {
         img {
@@ -19,7 +17,5 @@
             color: $color-texto;
         }
     }
-    } 
-    
-    
+    }    
 }

@@ -5,8 +5,18 @@
     } 
 
     &__nombre{
-        color: $color-texto;
-    }  
+        color: map-get($color-pagina,color-texto);
+        
+        h3,h4 {
+            font-family: 'Koulen', cursive;
+            letter-spacing: 0.2rem;
+        }
+    } 
+}
+
+.nav-link {
+    font-family: 'Koulen', cursive;
+    letter-spacing: 0.1rem;
 }
 
 .active {

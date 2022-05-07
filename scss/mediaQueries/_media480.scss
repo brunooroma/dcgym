@@ -1,0 +1,25 @@
+@media only screen and (max-width: 480px) {
+    
+    .inicio__section {
+        p {
+            text-align: justify;
+        }
+
+        img {
+            width: 80vw;
+        }
+    } 
+    
+    .contacto__form {
+        margin-top: 8rem;
+        width: 80vw;
+
+        div {
+            width: 80%;
+        }
+    }
+
+    .form-check {
+        padding-left: 7rem;
+    }
+}
