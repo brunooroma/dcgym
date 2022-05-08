@@ -38,20 +38,20 @@
     <main class="contacto">
         <form class="contacto__form">
             <div class="mb-3">
-                <label class="form-label">Nombre</label>
-                <input type="text" placeholder="Juan Pablo" class="form-control">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Juan Pablo" class="form-control">
             </div>
             <div class="mb-3">
-                <label class="form-label">Apellido</label>
-                <input type="text" placeholder="Garcia" class="form-control">
+                <label class="form-label" for="apellido">Apellido</label>
+                <input type="text" id="apellido" placeholder="Garcia" class="form-control">
             </div>
             <div class="mb-3">
-              <label class="form-label">Correo Electronico</label>
-              <input type="email" placeholder="ejemplo@ejemplo.com.ar" class="form-control">
+              <label class="form-label" for="email">Correo Electronico</label>
+              <input type="email" id="email" placeholder="ejemplo@ejemplo.com.ar" class="form-control">
             </div>
             <div class="mb-3">
-              <label class="form-label">Telefono</label>
-              <input type="tel" placeholder="1123456789" class="form-control">
+              <label class="form-label" for="telefono">Telefono</label>
+              <input type="tel" id="telefono" placeholder="1123456789" class="form-control">
             </div>
             <div class="mb-3">
             <select class="form-select">
@@ -63,14 +63,14 @@
               </select>
             </div>
             <div class="mb-3 form-check">
-              <input type="radio" name="creditos" value="8" class="form-check-input" >
-              <label class="form-check-label" >8 Creditos</label> <br>
-              <input type="radio" name="creditos" value="12" class="form-check-input" >
-              <label class="form-check-label" >12 Creditos</label> <br>
-              <input type="radio" name="creditos" value="16" class="form-check-input" >
-              <label class="form-check-label" >16 Creditos</label> <br>
-              <input type="radio" name="creditos" value="20" class="form-check-input" >
-              <label class="form-check-label" >20 Creditos</label> <br>
+              <input type="radio" name="creditos" value="8" id="ocho" class="form-check-input" >
+              <label class="form-check-label" for="ocho">8 Creditos</label> <br>
+              <input type="radio" name="creditos" value="12" id="doce" class="form-check-input" >
+              <label class="form-check-label" for="doce">12 Creditos</label> <br>
+              <input type="radio" name="creditos" value="16" id="dieciseis" class="form-check-input" >
+              <label class="form-check-label" for="dieciseis">16 Creditos</label> <br>
+              <input type="radio" name="creditos" value="20" id="veinte" class="form-check-input" >
+              <label class="form-check-label" for="veinte">20 Creditos</label> <br>
             </div>
             <button type="submit" class="btn btn-primary btn-inscripcion">Inscribirse</button>
           </form>
