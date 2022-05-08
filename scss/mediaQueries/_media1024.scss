@@ -24,4 +24,11 @@
     .form-check {
         padding-left: 8rem;
     }
+
+    .error {
+
+        &__div {
+            text-align: center;
+        }
+    }
 }

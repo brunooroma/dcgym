@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat&display=swap");
-.inicio__section, .staff, .contacto__form {
+.inicio__section, .staff, .contacto__form, .error__div {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -138,6 +138,18 @@ main {
   width: 7rem;
   border-radius: 50%; }
 
+.error {
+  padding: 5rem; }
+  .error__div {
+    flex-direction: column; }
+    .error__div h1 {
+      color: #f7f7f7; }
+    .error__div img {
+      margin: 2rem 0rem; }
+    .error__div a {
+      color: #f7f7f7;
+      font-size: 2rem; }
+
 @media only screen and (max-width: 1440px) {
   .staff__section {
     width: 80vw; }
@@ -161,7 +173,9 @@ main {
   .contacto__form {
     width: 60vw; }
   .form-check {
-    padding-left: 8rem; } }
+    padding-left: 8rem; }
+  .error__div {
+    text-align: center; } }
 
 @media only screen and (max-width: 768px) {
   .navbar__nombre h4 {
@@ -208,7 +222,9 @@ main {
     margin-top: 8rem;
     width: 80vw; }
   .form-check {
-    padding-left: 8rem; } }
+    padding-left: 8rem; }
+  .error {
+    margin-top: 4rem; } }
 
 @media only screen and (max-width: 480px) {
   .inicio__section p {
@@ -221,7 +237,13 @@ main {
     .contacto__form div {
       width: 80%; }
   .form-check {
-    padding-left: 7rem; } }
+    padding-left: 7rem; }
+  .error__div h1 {
+    font-size: 1.5rem; }
+  .error__div img {
+    width: 80vw; }
+  .error__div a {
+    font-size: 1rem; } }
 
 @media only screen and (max-width: 320px) {
   .carousel {

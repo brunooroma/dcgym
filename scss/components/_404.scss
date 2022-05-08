@@ -1,0 +1,21 @@
+.error {
+    padding: 5rem;
+
+    &__div {
+        @extend %flex-center;
+        flex-direction: column;
+
+        h1 {
+            color: $color-texto;
+        }
+
+        img {
+            margin: 2rem 0rem;
+        }
+
+        a {
+            color: $color-texto;
+            font-size: 2rem;
+        }
+    }
+}
