@@ -14,6 +14,10 @@
     .inicio {
         margin-top: 5rem;
         padding-top: 5rem;
+
+        &__section {
+            padding: 0;
+        }
     }
 
     .staff {

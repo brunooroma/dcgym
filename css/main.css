@@ -48,16 +48,18 @@ main {
 .inicio {
   color: #f7f7f7;
   padding: 3rem; }
-  .inicio__section:first-child {
-    display: flex;
-    flex-direction: column; }
+  .inicio__section {
+    padding: 4rem 15rem; }
+    .inicio__section:first-child {
+      display: flex;
+      flex-direction: column; }
 
 .staff__section {
   display: flex;
   width: 50vw;
   background-color: #8f13ce; }
   .staff__section__div img {
-    margin: 1rem; }
+    margin: 2rem 2rem 2rem 1rem; }
   .staff__section__div p {
     margin: 1rem 2rem;
     color: #f7f7f7; }
@@ -147,6 +149,8 @@ main {
     padding-left: 5rem; } }
 
 @media only screen and (max-width: 1024px) {
+  .inicio__section {
+    padding: 2rem 5rem; }
   .galeria {
     margin-top: 5rem;
     min-height: 120vh; }
@@ -169,6 +173,8 @@ main {
   .inicio {
     margin-top: 5rem;
     padding-top: 5rem; }
+    .inicio__section {
+      padding: 0; }
   .staff {
     margin-top: 8rem; }
     .staff__section {

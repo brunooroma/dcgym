@@ -4,6 +4,7 @@
 
     &__section {
         @extend %flex-center;
+        padding: 4rem 15rem;
 
         &:first-child {
             display: flex;
