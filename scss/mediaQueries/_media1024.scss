@@ -1,7 +1,10 @@
 @media only screen and (max-width: 1024px) {
 
-    .inicio__section {
+    .inicio {
+
+        &__section {
         padding: 2rem 5rem;
+        }
     }
 
     .galeria {
@@ -9,16 +12,25 @@
         min-height: 120vh;
     }
 
-    .staff__section {
-        width: 85vw;
+    .staff {
+
+        &__section {
+            width: 85vw;
+        }
     }
 
-    .planes__section {
-        width: 80vw;
+    .planes {
+
+        &__section {
+            width: 80vw;
+        }
     }
 
-    .contacto__form {
-        width: 60vw;
+    .contacto {
+
+        &__form {
+            width: 60vw;
+        }
     }
 
     .form-check {

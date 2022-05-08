@@ -9,8 +9,11 @@
         padding-bottom: 2rem;
     }
 
-    .planes__section {
-        width: 95vw;
+    .planes {
+
+        &__section {
+            width: 95vw;
+        }
     }
 
     .form-check {

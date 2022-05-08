@@ -238,12 +238,15 @@ main {
       width: 80%; }
   .form-check {
     padding-left: 7rem; }
-  .error__div h1 {
-    font-size: 1.5rem; }
-  .error__div img {
-    width: 80vw; }
-  .error__div a {
-    font-size: 1rem; } }
+  .error {
+    margin-top: 8rem;
+    padding: 2rem; }
+    .error__div h1 {
+      font-size: 1.5rem; }
+    .error__div img {
+      width: 80vw; }
+    .error__div a {
+      font-size: 1rem; } }
 
 @media only screen and (max-width: 320px) {
   .carousel {

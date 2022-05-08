@@ -1,21 +1,27 @@
 @media only screen and (max-width: 480px) {
     
-    .inicio__section {
-        p {
-            text-align: justify;
-        }
+    .inicio {
 
-        img {
-            width: 80vw;
-        }
-    } 
+        &__section {
+            p {
+                text-align: justify;
+            }
     
-    .contacto__form {
-        margin-top: 8rem;
-        width: 80vw;
+            img {
+                width: 80vw;
+            }
+        } 
+    }
+    
+    .contacto {
 
-        div {
-            width: 80%;
+        &__form {
+            margin-top: 8rem;
+            width: 80vw;
+    
+            div {
+                width: 80%;
+            }
         }
     }
 
@@ -24,6 +30,9 @@
     }
 
     .error {
+
+        margin-top: 8rem;
+        padding: 2rem;
 
         &__div {
 
