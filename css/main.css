@@ -30,7 +30,7 @@ main {
 
 .navbar__logo {
   width: 6rem;
-  margin-left: 8rem; }
+  margin-left: 6rem; }
 
 .navbar__nombre {
   color: #f7f7f7; }
@@ -190,7 +190,7 @@ main {
   .navbar__nombre h4 {
     display: none; }
   .navbar__logo {
-    margin-left: 2rem; }
+    margin-left: 1rem; }
   main {
     margin-top: 2rem; }
   .inicio {
