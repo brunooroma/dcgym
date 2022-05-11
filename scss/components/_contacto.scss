@@ -20,6 +20,10 @@
     div {
         width: 50%;
     }
+
+    ::placeholder {
+        color: $color-oscuro;
+    }
 }
 
 .form-check {

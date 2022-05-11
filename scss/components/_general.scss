@@ -9,7 +9,7 @@
 main {
     margin-top: 8rem;
     min-height: 100vh;
-    background-image: url(../../imagenes/bgheader.png);
+    background-image: url(../imagenes/bgheader.png);
     
     @include background(no-repeat,cover);
 

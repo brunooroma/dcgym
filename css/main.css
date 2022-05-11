@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat&display=swap");
-.inicio__section, .staff, .contacto__form, .error__div {
+.inicio__section, .staff, .modal-body, .contacto__form, .error__div {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -21,7 +21,7 @@
 main {
   margin-top: 8rem;
   min-height: 100vh;
-  background-image: url(../../imagenes/bgheader.png);
+  background-image: url(../imagenes/bgheader.png);
   background-repeat: no-repeat;
   background-size: cover; }
   main section p {
@@ -89,6 +89,11 @@ main {
 
 .modal {
   color: #000; }
+  .modal-body {
+    flex-direction: column;
+    font-weight: bold; }
+    .modal-body h5 {
+      font-weight: bold; }
 
 .galeria {
   width: 100%;
@@ -114,6 +119,8 @@ main {
     border-bottom: 0.1rem solid #8f13ce; }
   .contacto div {
     width: 50%; }
+  .contacto ::placeholder {
+    color: #000; }
 
 .form-check {
   padding-left: 7.5rem; }
@@ -178,6 +185,8 @@ main {
     text-align: center; } }
 
 @media only screen and (max-width: 768px) {
+  .navbar__nombre h3 {
+    font-size: 3rem; }
   .navbar__nombre h4 {
     display: none; }
   .navbar__logo {
@@ -227,10 +236,14 @@ main {
     margin-top: 4rem; } }
 
 @media only screen and (max-width: 480px) {
+  .navbar__nombre h3 {
+    font-size: 1.6rem; }
   .inicio__section p {
     text-align: justify; }
   .inicio__section img {
     width: 80vw; }
+  .planes h4 {
+    font-size: 1.5rem; }
   .contacto__form {
     margin-top: 8rem;
     width: 80vw; }

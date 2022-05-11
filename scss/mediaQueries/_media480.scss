@@ -1,5 +1,16 @@
 @media only screen and (max-width: 480px) {
     
+    .navbar {
+
+        &__nombre {
+
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+
     .inicio {
 
         &__section {
@@ -11,6 +22,12 @@
                 width: 80vw;
             }
         } 
+    }
+
+    .planes {
+        h4 {
+            font-size: 1.5rem;
+        }
     }
     
     .contacto {

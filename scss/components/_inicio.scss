@@ -1,7 +1,7 @@
 .inicio {
     color: $color-texto;
     padding: 3rem;
-
+    
     &__section {
         @extend %flex-center;
         padding: 4rem 15rem;

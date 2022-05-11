@@ -32,6 +32,17 @@
 
 .modal {
     color: $color-oscuro;
+
+    &-body {
+
+        h5 {
+            font-weight: bold;
+        }
+
+        @extend %flex-center;
+        flex-direction: column;
+        font-weight: bold;
+    }
 }
 
 .planes-btn {
