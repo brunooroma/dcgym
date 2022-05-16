@@ -30,7 +30,7 @@ main {
 
 .navbar__logo {
   width: 6rem;
-  margin-left: 6rem; }
+  margin-left: 4rem; }
 
 .navbar__nombre {
   color: #f7f7f7; }
@@ -49,20 +49,49 @@ main {
   color: #f7f7f7;
   padding: 3rem; }
   .inicio__section {
-    padding: 4rem 15rem; }
+    padding: 2rem 5rem; }
     .inicio__section:first-child {
       display: flex;
       flex-direction: column; }
+    .inicio__section__parrafo {
+      margin: 2rem 0;
+      padding: 0 15rem;
+      text-align: center; }
+    .inicio__section__lista {
+      margin-top: 3rem 4rem 3rem 4rem; }
+      .inicio__section__lista__item {
+        padding: 1rem; }
+        .inicio__section__lista__item span {
+          font-weight: bold;
+          font-size: 1rem; }
+    .inicio__section h1 {
+      text-align: center; }
+    .inicio__section h6 {
+      text-align: center; }
+    .inicio__section img {
+      width: 80vw; }
 
 .staff__section {
   display: flex;
   width: 50vw;
   background-color: #8f13ce; }
   .staff__section__div img {
-    margin: 2rem 2rem 2rem 1rem; }
+    margin: 2rem 2rem 2rem 1rem;
+    height: 50vh; }
+  .staff__section__div h4 {
+    color: #f7f7f7;
+    margin: 1rem 2rem 0 2rem;
+    text-align: center;
+    font-weight: bold; }
+  .staff__section__div h6 {
+    color: #f7f7f7;
+    margin: 0 2rem;
+    text-align: center; }
   .staff__section__div p {
     margin: 1rem 2rem;
     color: #f7f7f7; }
+  .staff__section__div span {
+    font-weight: bold; }
 
 .planes {
   margin-top: 8rem; }
@@ -102,7 +131,14 @@ main {
 
 .carousel {
   width: 98vw;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center; }
+  .carousel-item img {
+    height: 90vh; }
+
+.carousel-inner {
+  width: 80vw; }
 
 .contacto {
   display: flex;
@@ -158,6 +194,10 @@ main {
       font-size: 2rem; }
 
 @media only screen and (max-width: 1440px) {
+  .inicio__section__parrafo {
+    margin: 2rem 0;
+    padding: 0 5rem;
+    text-align: center; }
   .staff__section {
     width: 80vw; }
   .planes__section {
@@ -168,8 +208,13 @@ main {
     padding-left: 5rem; } }
 
 @media only screen and (max-width: 1024px) {
+  .navbar__logo {
+    width: 6rem;
+    margin-left: 2rem; }
   .inicio__section {
-    padding: 2rem 5rem; }
+    padding: 2rem 2rem; }
+    .inicio__section__parrafo {
+      text-align: left; }
   .galeria {
     margin-top: 5rem;
     min-height: 120vh; }
@@ -199,16 +244,20 @@ main {
     .inicio__section {
       padding: 0; }
   .staff {
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem; }
     .staff__section {
       width: 85vw;
       flex-direction: column;
       align-items: center; }
       .staff__section__div {
         display: flex;
-        justify-content: center; }
+        justify-content: center;
+        flex-direction: column; }
         .staff__section__div img {
-          width: 50%; }
+          margin: 0;
+          padding-top: 1rem; }
   .planes {
     margin-top: 2rem; }
     .planes__section {
@@ -238,10 +287,13 @@ main {
 @media only screen and (max-width: 480px) {
   .navbar__nombre h3 {
     font-size: 1.6rem; }
-  .inicio__section p {
-    text-align: justify; }
+  .inicio__section__parrafo {
+    text-align: justify;
+    padding: 0; }
   .inicio__section img {
     width: 80vw; }
+  .staff__section__div img {
+    height: 40vh; }
   .planes h4 {
     font-size: 1.5rem; }
   .contacto__form {

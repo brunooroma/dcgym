@@ -1,9 +1,19 @@
 @media only screen and (max-width: 1024px) {
 
+    .navbar {
+        &__logo {
+        width: 6rem;
+        margin-left: 2rem;
+        } 
+    }
     .inicio {
 
         &__section {
-        padding: 2rem 5rem;
+        padding: 2rem 2rem;
+
+        &__parrafo {
+            text-align: left;
+        }
         }
     }
 

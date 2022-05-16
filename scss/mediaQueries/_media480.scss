@@ -14,14 +14,28 @@
     .inicio {
 
         &__section {
-            p {
+            &__parrafo {
                 text-align: justify;
+                padding: 0;
             }
     
             img {
                 width: 80vw;
             }
         } 
+    }
+
+    .staff {
+        
+        &__section {
+
+            &__div {
+
+                img {
+                    height: 40vh;
+                }
+            }
+        }
     }
 
     .planes {

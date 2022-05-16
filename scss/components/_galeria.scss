@@ -7,8 +7,17 @@
 .carousel {
     width: 98vw;
     padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+    &-item {
+        img {
+            height: 90vh;
+        }
+    }
 }
 
 .carousel-inner {
     @extend %bordes;
+    width: 80vw;
 }

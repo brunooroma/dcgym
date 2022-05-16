@@ -32,6 +32,8 @@
 
     .staff {
         margin-top: 8rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
 
         &__section {
             width: 85vw;
@@ -41,9 +43,11 @@
             &__div {
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
 
                 img {
-                    width: 50%;
+                   margin: 0;
+                   padding-top: 1rem;
                 }
             }
         }

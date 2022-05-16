@@ -4,15 +4,43 @@
     
     &__section {
         @extend %flex-center;
-        padding: 4rem 15rem;
+        padding: 2rem 5rem;
 
         &:first-child {
             display: flex;
             flex-direction: column;
         }
 
+        &__parrafo {
+            margin: 2rem 0;
+            padding: 0 15rem;
+            text-align: center;
+        }
+
+        &__lista {
+            margin-top: 3rem 4rem 3rem 4rem;
+
+            &__item {
+                padding: 1rem;
+
+                span {
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h6 {
+            text-align: center;
+        }
+
         img {
            @extend %bordes;
+           width: 80vw;
         }
     }
 }

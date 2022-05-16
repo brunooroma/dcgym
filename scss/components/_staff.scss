@@ -9,12 +9,32 @@
     @extend %bordes;
 
     &__div {
+        
         img {
-            margin: 2rem 2rem 2rem 1rem;    
+            margin: 2rem 2rem 2rem 1rem;
+            height: 50vh;   
         }
+
+        h4{
+            color: $color-texto;
+            margin: 1rem 2rem 0 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h6 {
+            color: $color-texto;
+            margin: 0 2rem;
+            text-align: center;
+        }
+
         p {
             margin: 1rem 2rem;
             color: $color-texto;
+        }
+
+        span {
+            font-weight: bold;
         }
     }
     }    
