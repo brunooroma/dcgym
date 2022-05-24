@@ -63,16 +63,16 @@
         &__form {
             margin-top: 8rem;
             width: 80vw;
-    
-            div {
-                width: 80%;
-            }
+        }
+
+        div:not(.form-check) {
+            width: 80%;
+        }
+
+        ::placeholder {
+            font-size: 0.7rem;
         }
     }
-
-/*     .form-check {
-        padding-left: 7rem;
-    } */
 
     .error {
 

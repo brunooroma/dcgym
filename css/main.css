@@ -154,7 +154,7 @@ main {
     flex-direction: column;
     margin-top: 4rem;
     width: 30vw;
-    height: 70vh;
+    height: 80vh;
     background-color: #fff;
     border-radius: 5%; }
   .contacto label {
@@ -211,10 +211,7 @@ main {
   .planes__section {
     margin-top: 2rem;
     padding-top: 2rem;
-    width: 60vw; }
-  /*   .form-check {
-        padding-left: 5rem;
-    }*/ }
+    width: 60vw; } }
 
 @media only screen and (max-width: 1024px) {
   .navbar__logo {
@@ -233,9 +230,6 @@ main {
     width: 80vw; }
   .contacto__form {
     width: 60vw; }
-  /*     .form-check {
-        padding-left: 8rem;
-    } */
   .error__div {
     text-align: center; } }
 
@@ -288,14 +282,10 @@ main {
     .carousel-item {
       height: 40vh; }
   .carousel-inner img {
-    /*             height: 40vh; */
     width: 90vw; }
   .contacto__form {
     margin-top: 8rem;
     width: 80vw; }
-  /*     .form-check {
-        padding-left: 8rem;
-    } */
   .error {
     margin-top: 4rem; } }
 
@@ -319,11 +309,10 @@ main {
   .contacto__form {
     margin-top: 8rem;
     width: 80vw; }
-    .contacto__form div {
-      width: 80%; }
-  /*     .form-check {
-        padding-left: 7rem;
-    } */
+  .contacto div:not(.form-check) {
+    width: 80%; }
+  .contacto ::placeholder {
+    font-size: 0.7rem; }
   .error {
     margin-top: 8rem;
     padding: 2rem; }
@@ -342,7 +331,4 @@ main {
     padding-top: 4rem;
     padding-bottom: 2rem; }
   .planes__section {
-    width: 95vw; }
-  /*     .form-check {
-        padding-left: 5rem;
-    } */ }
+    width: 95vw; } }
