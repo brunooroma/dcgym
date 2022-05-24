@@ -11,13 +11,15 @@
     justify-content: center;
 
     &-item {
+        height: 80vh;
         img {
-            height: 90vh;
+            height: 100%;
         }
     }
 }
 
 .carousel-inner {
     @extend %bordes;
-    width: 80vw;
+    width: 60vw;
+    max-height: 80vh;
 }

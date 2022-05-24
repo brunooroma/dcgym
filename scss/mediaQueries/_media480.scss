@@ -43,6 +43,20 @@
             font-size: 1.5rem;
         }
     }
+
+    .carousel {
+
+        &-item {
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+
+    .carousel-inner {
+        width: 80vw;
+        height: 40vh;
+    }
     
     .contacto {
 
@@ -56,9 +70,9 @@
         }
     }
 
-    .form-check {
+/*     .form-check {
         padding-left: 7rem;
-    }
+    } */
 
     .error {
 

@@ -3,6 +3,11 @@
     &__logo {
     width: 6rem;
     margin-left: 4rem;
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.2,1.2)
+    }
     } 
 
     &__nombre{
